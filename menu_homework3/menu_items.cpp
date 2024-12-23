@@ -17,17 +17,17 @@ const Swd2k::MenuItem Swd2k::GO_GEOGRAF_BACK = {
 };
 
 namespace {
-    const Swd2k::MenuItem* const study_children[] = {
+    const Swd2k::MenuItem* const dalniy_vostok_children[] = {
         &Swd2k::GO_GEOGRAF_BACK,
         &Swd2k::SHOW_VLADIVOSTOK_MENU,
         &Swd2k::SHOW_SAKHALIN_MENU,
         &Swd2k::SHOW_KHABAROVSK_MENU
     };
-    const int study_size = sizeof(study_children) / sizeof(study_children[0]);
+    const int dalniy_vostok_size = sizeof(dalniy_vostok_children) / sizeof(dalniy_vostok_children[0]);
 }
 
 const Swd2k::MenuItem Swd2k::SHOW_DALNIY_VOSTOK_MENU = {
-    "1 - Хочу узнать про Дальний Восток!", Swd2k::show_dalniy_vostok_menu, &Swd2k::STUDY, study_children, study_size
+    "1 - Хочу узнать про Дальний Восток!", Swd2k::show_dalniy_vostok_menu, &Swd2k::STUDY, dalniy_vostok_children, dalniy_vostok_size
 };
 const Swd2k::MenuItem Swd2k::SHOW_ALTAY_MENU = {
     "2 - Хочу узнать про Алтай!", Swd2k::show_altay_menu, &Swd2k::STUDY
