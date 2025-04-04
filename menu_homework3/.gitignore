@@ -1,16 +1,8 @@
-build_*/
+build/
 *.user
 *.suo
 *.sln
 *.vcxproj*
 *.filters
-
-*.exe
-*.out
-*.a
-*.lib
-*.dll
-*.so
-
 CMakeCache.txt
 CMakeFiles/

@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 namespace Swd2k {
     struct MenuItem {

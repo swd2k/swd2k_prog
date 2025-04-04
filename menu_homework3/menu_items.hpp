@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "menu.hpp"
 
 namespace Swd2k {
