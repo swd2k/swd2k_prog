@@ -1,4 +1,4 @@
-#include "insertion_sort/sortings.hpp"
+#include "sortings.hpp"
 #include <algorithm>
 
 namespace biv::sortings {

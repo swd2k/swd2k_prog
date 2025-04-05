@@ -1,4 +1,4 @@
-#include "insertion_sort/io.hpp"
+#include "io.hpp"
 #include <iostream>
 
 namespace biv::io {
@@ -7,6 +7,6 @@ namespace biv::io {
     }
 
     void print_data(const std::vector<int>& data) {
-        // Реализация вывода
+
     }
 }

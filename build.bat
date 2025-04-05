@@ -21,12 +21,14 @@ where ninja > nul || (
     exit /b 1
 )
 
-if exist "%BUILD_DIR%" (
-    echo Очистка предыдущей сборки...
-    rmdir /s /q "%BUILD_DIR%"
-)
+::if exist "%BUILD_DIR%" (
+::    echo Очистка предыдущей сборки...
+::    rmdir /s /q "%BUILD_DIR%"
+::)
 
-mkdir "%BUILD_DIR%"
+::mkdir "%BUILD_DIR%"
+if not exist "%BUILD_DIR%" mkdir "%BUILD_DIR%"
+
 if %errorlevel% neq 0 (
     echo Ошибка создания папки сборки
     pause
@@ -51,7 +53,7 @@ if %errorlevel% neq 0 (
 )
 
 echo Запуск тестов...
-ctest --output-on-failure
+ctest -V
 if %errorlevel% neq 0 (
     echo Некоторые тесты не прошли
 )
